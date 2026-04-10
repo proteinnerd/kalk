@@ -1,0 +1,45 @@
+.yearRow { display: flex; align-items: center; justify-content: space-between; padding: 0 4px; }
+.yearNav { display: flex; align-items: center; gap: 10px; }
+.yrBtn { width: 30px; height: 30px; border: 1px solid var(--border); border-radius: 8px; background: var(--card); font-size: 17px; cursor: pointer; display: flex; align-items: center; justify-content: center; color: var(--muted); }
+.yrLabel { font-size: 17px; font-weight: 700; }
+.yrResult { font-size: 14px; font-weight: 700; font-family: monospace; }
+
+.monthRow { display: flex; align-items: center; gap: 6px; }
+.arrowBtn { flex-shrink: 0; width: 28px; height: 28px; border: 1px solid var(--border); border-radius: 7px; background: var(--card); font-size: 16px; cursor: pointer; display: flex; align-items: center; justify-content: center; color: var(--muted); }
+.chips { flex: 1; display: flex; gap: 5px; overflow-x: auto; scrollbar-width: none; }
+.chips::-webkit-scrollbar { display: none; }
+.chip { flex-shrink: 0; padding: 6px 11px; border-radius: 8px; border: 1px solid var(--border); background: var(--card); font-size: 12px; font-weight: 600; cursor: pointer; font-family: inherit; color: var(--muted); transition: all .12s; }
+.chipActive { background: var(--text) !important; color: #fff !important; border-color: var(--text); }
+
+.pills { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.pill { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 12px 14px; }
+.pillGreen { border-color: var(--green-border) !important; background: var(--green-bg) !important; }
+.pillRed   { border-color: var(--red-border)   !important; background: var(--red-bg)   !important; }
+.pillLbl { font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: .5px; color: var(--muted); margin-bottom: 4px; }
+.pillVal { font-size: 15px; font-weight: 700; font-family: monospace; }
+
+.section { background: var(--card); border: 1px solid var(--border); border-radius: var(--r); overflow: hidden; }
+.sectionHead { padding: 11px 16px; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .5px; color: var(--muted); border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; }
+.sectionTotal { font-family: monospace; font-size: 13px; font-weight: 700; }
+.emptyRow { padding: 12px 16px; font-size: 13px; color: var(--muted); }
+
+.row { display: flex; align-items: center; padding: 11px 16px; border-bottom: 1px solid var(--border); gap: 10px; }
+.row:last-of-type { border-bottom: none; }
+.rowIcon { font-size: 22px; flex-shrink: 0; }
+.rowName { flex: 1; font-size: 14px; font-weight: 500; }
+.amountBtn { font-size: 14px; font-weight: 600; font-family: monospace; cursor: pointer; padding: 5px 10px; border-radius: 8px; background: var(--bg); border: none; min-width: 80px; text-align: right; }
+.inlineInput { font-size: 14px; font-weight: 600; font-family: monospace; text-align: right; width: 110px; padding: 5px 10px; border-radius: 8px; border: 1.5px solid var(--blue); background: var(--bg); color: var(--text); outline: none; }
+.delBtn { background: none; border: none; color: var(--muted); cursor: pointer; font-size: 18px; padding: 4px; border-radius: 6px; line-height: 1; }
+.delBtn:hover { color: var(--red); }
+.addRow { display: flex; align-items: center; gap: 8px; padding: 11px 16px; cursor: pointer; color: var(--muted); font-size: 14px; background: none; border: none; width: 100%; font-family: inherit; border-top: 1px solid var(--border); }
+.addRow:hover { background: var(--bg); }
+
+.yrTable { background: var(--card); border: 1px solid var(--border); border-radius: var(--r); overflow: hidden; }
+.yrTableHead { display: grid; grid-template-columns: 70px 1fr 1fr 1fr; padding: 9px 16px; background: var(--bg); border-bottom: 1px solid var(--border); font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .5px; color: var(--muted); }
+.yrTableHead span:not(:first-child) { text-align: right; }
+.yrRow { display: grid; grid-template-columns: 70px 1fr 1fr 1fr; padding: 11px 16px; border-bottom: 1px solid var(--border); font-size: 13px; cursor: pointer; transition: background .1s; align-items: center; }
+.yrRow:last-child { border-bottom: none; }
+.yrRow:hover { background: var(--bg); }
+.yrRowCur { background: var(--blue-bg) !important; }
+.yrMonth { font-weight: 600; }
+.yrNum { text-align: right; font-family: monospace; font-size: 12px; }

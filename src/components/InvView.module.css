@@ -1,0 +1,26 @@
+.sugBar { background: var(--green-bg); border: 1px solid var(--green-border); border-radius: 10px; padding: 10px 14px; display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.sugTxt { font-size: 12px; color: var(--green); flex: 1; }
+.sugBtn { padding: 6px 12px; border-radius: 8px; border: none; background: var(--green); color: #fff; font-size: 12px; font-weight: 700; cursor: pointer; font-family: inherit; }
+
+.card { background: var(--card); border: 1px solid var(--border); border-radius: var(--r); overflow: hidden; }
+.cardHead { padding: 13px 16px; font-size: 14px; font-weight: 700; border-bottom: 1px solid var(--border); }
+.field { padding: 13px 16px; border-bottom: 1px solid var(--border); }
+.field:last-child { border-bottom: none; }
+.fieldLbl { font-size: 12px; color: var(--muted); margin-bottom: 8px; }
+.fieldRow { display: flex; align-items: center; gap: 8px; }
+.inp { font-size: 15px; font-weight: 700; font-family: monospace; text-align: right; width: 110px; padding: 7px 11px; border-radius: 8px; border: 1.5px solid var(--border); background: var(--bg); color: var(--text); outline: none; transition: border-color .12s; }
+.inp:focus { border-color: var(--blue); }
+.unit { font-size: 13px; color: var(--muted); white-space: nowrap; }
+.slider { width: 100%; accent-color: var(--blue); margin-top: 4px; }
+.splitRow { display: flex; justify-content: space-between; font-size: 11px; color: var(--muted); margin-top: 6px; }
+
+.resultBox { background: var(--card); border: 1px solid var(--border); border-radius: var(--r); padding: 20px 16px; display: flex; flex-direction: column; gap: 10px; }
+.resultMain { font-size: 28px; font-weight: 800; font-family: monospace; color: var(--blue); text-align: center; }
+.resultSub { font-size: 12px; color: var(--muted); text-align: center; }
+.resultLine { display: flex; justify-content: space-between; font-size: 13px; padding-top: 6px; border-top: 1px solid var(--border); }
+.resultLine span:last-child { font-weight: 700; font-family: monospace; }
+
+.goalBox { margin: 0 16px 16px; background: var(--green-bg); border: 1px solid var(--green-border); border-radius: 10px; padding: 18px 16px; text-align: center; }
+.goalMain { font-size: 26px; font-weight: 800; font-family: monospace; color: var(--green); }
+.goalSub { font-size: 12px; color: var(--muted); margin-top: 6px; }
+.goalBoxEmpty { margin: 0 16px 16px; padding: 16px; text-align: center; font-size: 13px; color: var(--muted); }
